@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'UserLayer'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of UserLayer.'
+  s.summary          = 'Login and Profile functionality'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
     }
     
    s.resource_bundles = {
-     'UserLayer' => ['Source/**/*.xcassets', 'Source/**/*.xib']
+     'UserLayer' => ['Source/**/*.xcassets']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
