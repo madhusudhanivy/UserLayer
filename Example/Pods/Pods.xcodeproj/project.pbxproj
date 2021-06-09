@@ -13,6 +13,8 @@
 		8397239DF53DFE90FE88486CCE42B326 /* Pods-UserLayer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB9B47ED3B3A62D4D8B30B4A71ECA9E /* Pods-UserLayer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A532BF715854E83D8F38476838613D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B696920E1F02EECFF1F0EF83721C4EA7 /* Pods-UserLayer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E3BE2FBC174D59575E1571D45F281A /* Pods-UserLayer_Tests-dummy.m */; };
+		C39A50212670A13B00C022AD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39A501D26709DF200C022AD /* LoginVC.swift */; };
+		C39A50222670A14500C022AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39A501F2670A13200C022AD /* Images.xcassets */; };
 		CA281D7A4E017E56D39158DE578C2DFB /* Pods-UserLayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCCD7DDF5F800787D7FCFEA482BA8F75 /* Pods-UserLayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2512062504D2A5993972A69F0CEE518 /* UserLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07270E00A9E8FADF855B074E37F2BA39 /* UserLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9044D1C1128D634F6995C900C4938A3 /* UserLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9A6E2B8FE12FDB27E7A03E461AC165 /* UserLayer-dummy.m */; };
@@ -60,6 +62,8 @@
 		AC9A6E2B8FE12FDB27E7A03E461AC165 /* UserLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UserLayer-dummy.m"; sourceTree = "<group>"; };
 		ACA93CEBE08AE17F2EC5460757263FC7 /* Pods-UserLayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UserLayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C14F42635760310B8178359247960B3D /* UserLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UserLayer.release.xcconfig; sourceTree = "<group>"; };
+		C39A501D26709DF200C022AD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C39A501F2670A13200C022AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C69740449AC784651D20C36EEBD5D6FE /* UserLayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UserLayer-Info.plist"; sourceTree = "<group>"; };
 		CCCD7DDF5F800787D7FCFEA482BA8F75 /* Pods-UserLayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UserLayer_Example-umbrella.h"; sourceTree = "<group>"; };
 		CDC04F1C6F2802429D83CEA930B0675A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		A152CF3A3CE997B26750E740A444D1BF /* UserLayer */ = {
 			isa = PBXGroup;
 			children = (
+				C39A501B26709DC700C022AD /* Source */,
 				34C667CE986CBDACEC7D49527E5321BB /* Pod */,
 				AC9BEDC1AD39D3901997670754D7A228 /* Support Files */,
 			);
@@ -182,6 +187,23 @@
 			);
 			name = "Pods-UserLayer_Example";
 			path = "Target Support Files/Pods-UserLayer_Example";
+			sourceTree = "<group>";
+		};
+		C39A501B26709DC700C022AD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C39A501F2670A13200C022AD /* Images.xcassets */,
+				C39A501C26709DD500C022AD /* Login */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C39A501C26709DD500C022AD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C39A501D26709DF200C022AD /* LoginVC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		CB0B1FE45F9A559A87EDC7DB52B132A7 /* Targets Support Files */ = {
@@ -313,7 +335,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A2BAE9699CD5952587E9457A43674266 = {
+						LastSwiftMigration = 1250;
+					};
+					B879B9C475A02E9473AD56D48DDB8F26 = {
+						LastSwiftMigration = 1250;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -340,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39A50222670A14500C022AD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C39A50212670A13B00C022AD /* LoginVC.swift in Sources */,
 				E9044D1C1128D634F6995C900C4938A3 /* UserLayer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +439,7 @@
 			baseConfigurationReference = 11561618FDBA3A5CD70396B8FAFD5C38 /* Pods-UserLayer_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -417,7 +450,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UserLayer_Example/Pods-UserLayer_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UserLayer_Example/Pods-UserLayer_Example.modulemap";
@@ -428,6 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -488,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -516,7 +550,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UserLayer/UserLayer-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UserLayer/UserLayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UserLayer/UserLayer.modulemap";
 				PRODUCT_MODULE_NAME = UserLayer;
@@ -524,7 +558,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -547,7 +581,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UserLayer_Tests/Pods-UserLayer_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UserLayer_Tests/Pods-UserLayer_Tests.modulemap";
@@ -579,7 +613,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UserLayer_Tests/Pods-UserLayer_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UserLayer_Tests/Pods-UserLayer_Tests.modulemap";
@@ -647,7 +681,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,6 +697,7 @@
 			baseConfigurationReference = DAB49CF2D2738D32B434E466DFC55A2C /* Pods-UserLayer_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -673,7 +708,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-UserLayer_Example/Pods-UserLayer_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UserLayer_Example/Pods-UserLayer_Example.modulemap";
@@ -684,6 +719,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -705,7 +742,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/UserLayer/UserLayer-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/UserLayer/UserLayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UserLayer/UserLayer.modulemap";
 				PRODUCT_MODULE_NAME = UserLayer;
@@ -713,7 +750,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
