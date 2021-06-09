@@ -1,0 +1,22 @@
+{
+  "name": "UserLayer",
+  "version": "0.1.0",
+  "summary": "A short description of UserLayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/madhusudhanivy/UserLayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "madhusudhanivy": "madhusudhan.putta@ivycomptech.com"
+  },
+  "source": {
+    "git": "https://github.com/madhusudhanivy/UserLayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "UserLayer/Classes/**/*"
+}

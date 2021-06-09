@@ -1,0 +1,16 @@
+PODS:
+  - UserLayer (0.1.0)
+
+DEPENDENCIES:
+  - UserLayer (from `../`)
+
+EXTERNAL SOURCES:
+  UserLayer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  UserLayer: 9cb6f8ef4e5a781912d65344d15357a5b13de0d4
+
+PODFILE CHECKSUM: c89f4cbc70e54f2d4f24e9091ce0896994bf3722
+
+COCOAPODS: 1.10.1

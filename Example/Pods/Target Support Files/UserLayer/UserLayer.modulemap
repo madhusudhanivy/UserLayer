@@ -1,0 +1,6 @@
+framework module UserLayer {
+  umbrella header "UserLayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
